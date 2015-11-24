@@ -33,6 +33,13 @@ h3 {
   font-size:2em;
   font-family: 'Oswald', sans-serif;
   color:#fff;
+  line-height: 1.1em;
+}
+
+h3.underline {
+  padding-bottom:15px;
+  margin-bottom:15px;
+  border-bottom:1px solid #881414;
 }
 
 h4 {
@@ -42,7 +49,13 @@ h4 {
   margin:0;
 }
 
-.settings h4 i {
+h4.underline {
+  padding-bottom:15px;
+  margin-bottom:15px;
+  border-bottom:1px solid #881414;
+}
+
+h4.underline i {
    margin-right:15px;
 }
 
@@ -331,4 +344,14 @@ input[type=range]:focus::-ms-fill-upper {
   margin-right:20px;
   padding-right:20px;
   border-right:1px solid;
+}
+
+.user-big {
+  width:25%;
+  float:left;
+}
+
+.profile .data {
+  width:75%;
+  float:left;
 }
