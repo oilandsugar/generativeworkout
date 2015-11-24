@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>generative workout</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="js/workout-app/angular.min.js"></script>
+    <script src="js/workout-app/app.js"></script>
+    <script src="js/workout-app/controllers/mainController.js"></script>
+</head>
+<body ng-app="workout-app" ng-controller="MainController as main">
+  <header>
+    <h4>{{ main.title }}</h4>
+    <nav>
+      <div class="user">
+        <div class="profile-pic">
+          <img src="">
+        </div>
+        <div class="name">Tommy Poirier-Morissette</div>
+        <div class="icon"><i class="fa fa-chevron-down"></i></div>
+      </div>
+      <div class="dropdown">
+        <ul>
+          <li>
+            <a href="">
+              my account
+            </a>
+          </li>
+          <li>
+            <a href="">
+              my workouts
+            </a>
+          </li>
+          <li>
+            <a href="">
+              i'm done
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="main">
+    <div class="wrap">
+      <div class="workout">
+        <div class="settings">
+          <div class="intensity">
+            <input type="range">
+          </div>
+          <div class="duration">
+            <input type="range">
+          </div>
+          <div class="body-parts">
+            <select>
+              <option>arms</option>
+              <option>legs</option>
+              <option>abs</option>
+              <option>back</option>
+            </select>
+          </div>
+          <div class="type">
+            <select>
+              <option>cardio</option>
+              <option>muscu</option>
+            </select>
+          </div>
+        </div>
+        <div class="execise current">
+          <div class="name">
+            <h1>Squats</h1>
+          </div>
+          <div class="number">
+            20 reps
+          </div>
+          <div class="duration">
+            00:10
+          </div>
+          <div class="schema">
+          </div>
+          <div class="explication">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida libero turpis, nec mattis odio imperdiet at. Maecenas venenatis tincidunt lacinia. Phasellus finibus augue metus, vel lobortis dui rutrum vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus semper ut augue vel eleifend. Ut fermentum lacus dolor, id tincidunt justo pretium ac. Duis feugiat tortor mauris, id porttitor felis imperdiet id.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
