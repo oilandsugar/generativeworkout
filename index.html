@@ -5,6 +5,7 @@
     <title>generative workout</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
     <script src="js/workout-app/angular.min.js"></script>
     <script src="js/workout-app/app.js"></script>
     <script src="js/workout-app/controllers/mainController.js"></script>
@@ -45,41 +46,82 @@
     <div class="wrap">
       <div class="workout">
         <div class="settings">
-          <div class="intensity">
-            <input type="range">
-          </div>
-          <div class="duration">
-            <input type="range">
-          </div>
-          <div class="body-parts">
-            <select>
-              <option>arms</option>
-              <option>legs</option>
-              <option>abs</option>
-              <option>back</option>
-            </select>
-          </div>
-          <div class="type">
-            <select>
-              <option>cardio</option>
-              <option>muscu</option>
-            </select>
+          <div class="padding">
+            <h4>current workout</h4>
+            <div class="actions">
+              <h4><i class="fa fa-plus"></i>add to my workouts</h4>
+            </div>
+            <div class="current-state">
+              <h3>120 calories used</h3>
+              <h3>10 minutes passed </h3>
+            </div>
+            <div class="type">
+              <label>type</label>
+              <select>
+                <option>warm up</option>
+                <option>cardio</option>
+                <option>muscu</option>
+              </select>
+            </div>
+            <div class="intensity">
+              <label>intensity</label>
+              <input type="range">
+            </div>
+            <div class="duration">
+              <label>duration</label>
+              <input type="range">
+            </div>
+            <div class="body-parts">
+              <label>body parts</label>
+              <div class="choices">
+                <div class="choice">
+                  <div class="wrap">
+                    <input type="checkbox"><label>arms</label>
+                  </div>
+                </div>
+                <div class="choice">
+                  <div class="wrap">
+                    <input type="checkbox"><label>legs</label>
+                  </div>
+                </div>
+                <div class="choice">
+                  <div class="wrap">
+                    <input type="checkbox"><label>back</label>
+                  </div>
+                </div>
+                <div class="choice">
+                  <div class="wrap">
+                    <input type="checkbox"><label>abs</label>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="execise current">
-          <div class="name">
-            <h1>Squats</h1>
-          </div>
-          <div class="number">
-            20 reps
-          </div>
-          <div class="duration">
-            00:10
-          </div>
-          <div class="schema">
-          </div>
-          <div class="explication">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida libero turpis, nec mattis odio imperdiet at. Maecenas venenatis tincidunt lacinia. Phasellus finibus augue metus, vel lobortis dui rutrum vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus semper ut augue vel eleifend. Ut fermentum lacus dolor, id tincidunt justo pretium ac. Duis feugiat tortor mauris, id porttitor felis imperdiet id.
+        <div class="exercise current">
+          <div class="padding">
+            <div class="core">
+              <div class="name">
+                <h1>Squats</h1>
+              </div>
+              <div class="number">
+                <h1>20 reps</h1>
+              </div>
+              <div class="duration">
+                <h1>00:10:00</h1>
+              </div>
+              <div class="upcoming">
+                <h4>upcoming</h4>
+                <h3>jumping jacks</h3>
+                <h4>skip to next <i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i></h4>
+              </div>
+            </div>
+            <div class="schema">
+            </div>
+            <div class="explication">
+              <h4>How to</h4>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida libero turpis, nec mattis odio imperdiet at. Maecenas venenatis tincidunt lacinia. Phasellus finibus augue metus, vel lobortis dui rutrum vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus semper ut augue vel eleifend. Ut fermentum lacus dolor, id tincidunt justo pretium ac. Duis feugiat tortor mauris, id porttitor felis imperdiet id.
+            </div>
           </div>
         </div>
       </div>

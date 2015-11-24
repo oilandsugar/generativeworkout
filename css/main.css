@@ -1,0 +1,334 @@
+html {
+  height:100%;
+  width:100%;
+}
+
+body {
+  margin:0;
+  width:100%;
+  height:100%;
+  background:#EA5837;
+  color:#881414;
+}
+
+.padding {
+  padding:40px;
+  box-sizing: border-box;
+}
+
+a {
+  color:#fff;
+  text-decoration:none;
+}
+
+h1 {
+  font-size:4em;
+  margin:0;
+  font-family: 'Oswald', sans-serif;
+  color:#fff;
+}
+
+h3 {
+  margin:0;
+  font-size:2em;
+  font-family: 'Oswald', sans-serif;
+  color:#fff;
+}
+
+h4 {
+  font-family: 'Oswald', sans-serif;
+  text-transform:uppercase;
+  letter-spacing: 1px;
+  margin:0;
+}
+
+.settings h4 i {
+   margin-right:15px;
+}
+
+header {
+  height:60px;
+  width:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+}
+
+header h4 {
+  position:absolute;
+  left:50%;
+  width:200px;
+  margin:0 0 0 -100px;
+  line-height:60px;
+  text-align:center;
+}
+
+header nav {
+  float:right;
+}
+
+header .user {
+  line-height:60px;
+  position:relative;
+  overflow:hidden;
+  padding:0 30px;
+  cursor:pointer;
+}
+
+header .user:hover {
+  background:#881414;
+}
+
+header .user .profile-pic,
+header .user .name,
+header .user .icon {
+  float:left;
+}
+
+header .user .icon {
+  font-size: 12px;
+  margin-left:20px;
+}
+
+header nav .dropdown {
+  display:none;
+}
+
+header nav:hover .dropdown {
+  display:block;
+}
+
+header nav ul {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+header nav ul li {
+  margin:0;
+  padding:0;
+}
+
+header nav li a {
+  line-height:60px;
+  padding:0 30px;
+  display:block;
+  background:#881414;
+}
+
+header nav li a:hover {
+  background:#fff;
+}
+
+.main {
+  padding-top:80px;
+}
+
+.wrap {
+  padding:40px;
+}
+
+.main .workout h4 {
+  width:100%;
+}
+
+.main .settings {
+  overflow:hidden;
+  width:25%;
+  float:left;
+}
+
+.main .settings div {
+  width:100%;
+}
+
+.main .exercise {
+  width:75%;
+  float:left;
+}
+
+input,
+select {
+  width:100%;
+  margin:10px 0;
+  background:#881414;
+  color:#EA5837;
+  border:0;
+}
+
+select {
+  height:30px;
+  font-size:0.8rem;
+}
+
+label {
+  font-size:0.8rem;
+  font-family:helvetica, sans-serif;
+}
+
+.workout .settings h4 {
+  padding-bottom:15px;
+  margin-bottom:15px;
+  border-bottom:1px solid #881414;
+}
+
+.workout .settings .current-state {
+  padding-bottom:15px;
+  margin-bottom:15px;
+  border-bottom:1px solid #881414;
+}
+
+.main .settings .choices {
+  overflow:hidden;
+  width:calc(100% + 10px);
+  margin-left:-5px;
+}
+
+.choices input {
+  width:30px;
+  float:left;
+  margin:14px 0;
+}
+
+.main .settings .choices .choice {
+  float:left;
+  width:50%;
+  overflow:hidden;
+  padding:5px;
+  box-sizing:border-box;
+}
+
+.main .settings .choices .choice .wrap {
+  padding:0 8px;
+  background:#881414;
+  color:#EA5837;
+  overflow:hidden;
+  border-radius:4px;
+  box-sizing:border-box;
+  cursor:pointer;
+}
+
+.choices label {
+  float:left;
+  margin:10px 0;
+}
+
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent; /* Hides the slider so custom styles can be added */
+  border-color: transparent;
+  color: transparent;
+}
+
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 7.5px;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -5px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: none;
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  box-shadow: none;
+  border: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 7.5px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  border: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 7.5px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  box-shadow: none;
+  background: #881414;
+  border-radius: 4px;
+  border: 0;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #881414;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  box-shadow: none;
+  background: #881414;
+  border-radius: 4px;
+  border: 0;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #881414;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: none;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #881414;
+}
+input[type=range]::-ms-fill-upper {
+  background: #881414;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: none;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #881414;
+}
+
+.exercise .core {
+  overflow:hidden;
+  margin-bottom:30px;
+}
+
+.exercise .core div {
+  float:left;
+  margin-right:20px;
+  padding-right:20px;
+  border-right:1px solid;
+}
