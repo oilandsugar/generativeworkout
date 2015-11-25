@@ -77,6 +77,28 @@ header h4 {
   text-align:center;
 }
 
+.themes {
+  line-height: 60px;
+  float: left;
+  padding: 0 30px 0 75px;
+}
+
+.themes a {
+  padding: 0 5px;
+}
+
+.themes .water {
+  color:#CCCCF5;
+}
+
+.themes .fire {
+  color:#881414;
+}
+
+.themes .healthgoth {
+  color:#000;
+}
+
 header nav {
   float:right;
 }
@@ -85,7 +107,7 @@ header .user {
   line-height:60px;
   position:relative;
   overflow:hidden;
-  padding:0 30px;
+  padding:0 75px 0 30px;
   cursor:pointer;
 }
 
@@ -144,12 +166,23 @@ header nav li a:hover {
 
 .main .workout h4 {
   width:100%;
+  overflow:hidden;
 }
 
 .main .settings {
   overflow:hidden;
   width:25%;
   float:left;
+}
+
+.main .settings .workout-name {
+  float:left;
+  width:calc(100% - 30px);
+}
+
+.main .settings .regenerate {
+  float:right;
+  width:30px;
 }
 
 .main .settings div {
@@ -161,6 +194,46 @@ header nav li a:hover {
   float:left;
 }
 
+.exercice-list h4 {
+  margin-bottom:0;
+}
+
+.all-exercices {
+  display:none;
+}
+
+.small-exercice {
+  overflow:hidden;
+  border-bottom:1px solid;
+  line-height: 60px;
+}
+
+.small-exercice h2 {
+  margin:0;
+  font-family: 'Oswald', sans-serif;
+  color:#fff;
+  font-size:2em;
+}
+
+.small-exercice div {
+  float:left;
+  width:20%;
+  padding-right:20px;
+  margin-right:20px;
+  border-right:1px solid;
+}
+
+.small-exercice div.action {
+  width:auto;
+  border-right:0;
+  padding-right:30px;
+  margin-right:0;
+}
+
+.explication h4 {
+  margin-top:15px;
+}
+
 input,
 select {
   width:100%;
@@ -168,6 +241,11 @@ select {
   background:#881414;
   color:#EA5837;
   border:0;
+}
+
+input:focus,
+select:focus {
+  outline:none;
 }
 
 select {

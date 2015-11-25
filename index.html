@@ -6,12 +6,19 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/workout-app/angular.min.js"></script>
     <script src="js/workout-app/app.js"></script>
     <script src="js/workout-app/controllers/mainController.js"></script>
+    <script src="js/animations.js"></script>
 </head>
 <body ng-app="workout-app" ng-controller="MainController as main">
   <header>
+    <div class="themes">
+      <a href="" class="theme fire"><i class="fa fa-fire-extinguisher"></i></a>
+      <a href="" class="theme water"><i class="fa fa-tint"></i></a>
+      <a href="" class="theme healthgoth"><i class="fa fa-circle"></i></a>
+    </div>
     <h4>{{ main.title }}</h4>
     <nav>
       <div class="user">
@@ -47,13 +54,22 @@
       <div class="workout">
         <div class="settings">
           <div class="padding">
-            <h4>current workout</h4>
+            <h4>
+              <div class="workout-name">
+                {{ main.workouts[0].name }}
+              </div>
+              <div class="regenerate">
+                <i class="fa fa-refresh"></i>
+              </div>
+            </h4>
             <div class="actions">
-              <h4 class="underline"><i class="fa fa-plus"></i>add to my workouts</h4>
+              <a href="">
+                <h4 class="underline"><i class="fa fa-plus"></i>add to my workouts</h4>
+              </a>
             </div>
             <div class="current-state">
-              <h3>120 calories used</h3>
-              <h3>10 minutes passed </h3>
+              <h3>{{ main.workouts[0].total_calories }} calories used</h3>
+              <h3>{{ main.workouts[0].total_duration }} minutes passed </h3>
             </div>
             <div class="type">
               <label>type</label>
@@ -102,24 +118,45 @@
           <div class="padding">
             <div class="core">
               <div class="name">
-                <h1>Squats</h1>
+                <h1>{{ main.exercices[0].name }}</h1>
               </div>
               <div class="number">
-                <h1>20 reps</h1>
+                <h1>{{ main.exercices[0].reps }} reps</h1>
               </div>
               <div class="duration">
-                <h1>00:10:00</h1>
+                <h1>{{ main.exercices[0].duration }} mins</h1>
               </div>
               <div class="upcoming">
                 <h4>upcoming</h4>
-                <h3>jumping jacks</h3>
+                <h3>{{ main.exercices[1].reps }} {{ main.exercices[1].name }}</h3>
                 <h4>skip to next <i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i></h4>
+              </div>
+            </div>
+            <div class="exercice-list">
+              <a href="" id="toggle-exercice-list">
+                <h4 class="underline"><i class="fa fa-list"></i>See full list</h4>
+              </a>
+              <div class="all-exercices">
+                <div class="small-exercice" ng-repeat="exercice in main.exercices">
+                  <div class="name">
+                    <h2>{{ exercice.name }}</h2>
+                  </div>
+                  <div class="number">
+                    <h2>{{ exercice.reps }} reps</h2>
+                  </div>
+                  <div class="duration">
+                    <h2>{{ exercice.duration }} mins</h2>
+                  </div>
+                  <div class="action move"><i class="fa fa-arrows-v"></i></div>
+                  <div class="action regenerate"><i class="fa fa-refresh"></i></div>
+                  <div class="action delete"><i class="fa fa-times"></i></div>
+                </div>
               </div>
             </div>
             <div class="schema">
             </div>
             <div class="explication">
-              <h4>How to</h4>
+              <h4 class="underline">How to</h4>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida libero turpis, nec mattis odio imperdiet at. Maecenas venenatis tincidunt lacinia. Phasellus finibus augue metus, vel lobortis dui rutrum vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus semper ut augue vel eleifend. Ut fermentum lacus dolor, id tincidunt justo pretium ac. Duis feugiat tortor mauris, id porttitor felis imperdiet id.
             </div>
           </div>
