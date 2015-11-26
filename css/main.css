@@ -66,6 +66,7 @@ header {
   top:0;
   left:0;
   right:0;
+  background:#EA5837;
 }
 
 header h4 {
@@ -200,12 +201,15 @@ header nav li a:hover {
 
 .all-exercices {
   display:none;
+  border-bottom: 1px solid;
 }
 
 .small-exercice {
   overflow:hidden;
   border-bottom:1px solid;
+  border-top:1px solid;
   line-height: 60px;
+  background:#EA5837;
 }
 
 .small-exercice h2 {
@@ -228,6 +232,10 @@ header nav li a:hover {
   border-right:0;
   padding-right:30px;
   margin-right:0;
+}
+
+.small-exercice div.move {
+  cursor:all-scroll;
 }
 
 .explication h4 {

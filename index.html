@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <script src="js/workout-app/angular.min.js"></script>
     <script src="js/workout-app/app.js"></script>
     <script src="js/workout-app/controllers/mainController.js"></script>
@@ -58,9 +59,11 @@
               <div class="workout-name">
                 {{ main.workouts[0].name }}
               </div>
-              <div class="regenerate">
-                <i class="fa fa-refresh"></i>
-              </div>
+              <a href="">
+                <div class="regenerate">
+                  <i class="fa fa-refresh"></i>
+                </div>
+              </a>
             </h4>
             <div class="actions">
               <a href="">
@@ -147,9 +150,9 @@
                   <div class="duration">
                     <h2>{{ exercice.duration }} mins</h2>
                   </div>
-                  <div class="action move"><i class="fa fa-arrows-v"></i></div>
-                  <div class="action regenerate"><i class="fa fa-refresh"></i></div>
-                  <div class="action delete"><i class="fa fa-times"></i></div>
+                  <a href=""><div class="action move"><i class="fa fa-arrows-v"></i></div></a>
+                  <a href=""><div class="action regenerate"><i class="fa fa-refresh"></i></div></a>
+                  <a href=""><div class="action delete"><i class="fa fa-times"></i></div></a>
                 </div>
               </div>
             </div>
