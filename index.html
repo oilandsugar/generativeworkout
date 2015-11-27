@@ -24,8 +24,8 @@
     <h4>{{ main.title }}</h4>
     <nav>
       <div class="login-reg">
-        <a id="login"><h4>login</h4></a>
-        <a id="register"><h4>register</h4></a>
+        <a id="login" ui-sref="login"><h4>login</h4></a>
+        <a id="register" ui-sref="register"><h4>register</h4></a>
       </div>
       <div class="user">
         <div class="profile-pic">
@@ -58,7 +58,6 @@
   <div class="main">
     <div class="wrap" ui-view>
     </div>
-    <a ui-sref="home">home</a>
   </div>
 </body>
 </html>

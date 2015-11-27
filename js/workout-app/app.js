@@ -11,8 +11,16 @@ angular.module('workout-app').config(function($stateProvider, $urlRouterProvider
       url: "/",
       templateUrl: "js/workout-app/partials/home.html"
     })
-    .state('state2', {
+    .state('profile', {
       url: "/profile",
       templateUrl: "js/workout-app/partials/profile.html"
+    })
+    .state('login', {
+      url: "/login",
+      templateUrl: "js/workout-app/partials/login.html"
+    })
+    .state('register', {
+      url: "/register",
+      templateUrl: "js/workout-app/partials/register.html"
     })
 });
