@@ -85,21 +85,8 @@
         <a href="" id="toggle-exercice-list">
           <h4 class="underline"><i class="fa fa-list"></i>See full list</h4>
         </a>
-        <div class="all-exercices">
-          <div class="small-exercice" ng-repeat="exercice in main.exercices">
-            <div class="name">
-              <h2>{{ exercice.name }}</h2>
-            </div>
-            <div class="number">
-              <h2>{{ exercice.reps }} reps</h2>
-            </div>
-            <div class="duration">
-              <h2>{{ exercice.duration }} mins</h2>
-            </div>
-            <a href=""><div class="action move"><i class="fa fa-arrows-v"></i></div></a>
-            <a href=""><div class="action regenerate"><i class="fa fa-refresh"></i></div></a>
-            <a href=""><div class="action delete"><i class="fa fa-times"></i></div></a>
-          </div>
+        <div class="all-exercices" ui-view>
+          
         </div>
       </div>
       <div class="schema">

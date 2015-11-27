@@ -11,6 +11,47 @@ angular.module('workout-app').config(function($stateProvider, $urlRouterProvider
       url: "/",
       templateUrl: "js/workout-app/partials/home.html"
     })
+    .state('home.list', {
+      url: "/list",
+      templateUrl: "js/workout-app/partials/home.list.html",
+      controller: function($scope) {
+        $scope.exercices = [
+          {
+            name: 'squat',
+            reps: 10,
+    	      duration: 10,
+    	      intensity: 7,
+    	      type: 'type',
+            body_parts: ['legs'],
+    	      instructions: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida libero turpis, nec mattis odio imperdiet at. Maecenas venenatis tincidunt lacinia. Phasellus finibus augue metus, vel lobortis dui rutrum vitae.',
+    	      schema: 'test',
+            calories_per_time: 30
+          },
+          {
+            name: 'push up',
+            reps: 15,
+    	      duration: 5,
+    	      intensity: 8,
+    	      type: 'type',
+            body_parts: ['arms'],
+    	      instructions: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida libero turpis, nec mattis odio imperdiet at. Maecenas venenatis tincidunt lacinia. Phasellus finibus augue metus, vel lobortis dui rutrum vitae.',
+    	      schema: 'test',
+            calories_per_time: 40
+          },
+          {
+            name: 'something',
+            reps: 200,
+    	      duration: 20,
+    	      intensity: 8,
+    	      type: 'type',
+            body_parts: ['arms'],
+    	      instructions: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida libero turpis, nec mattis odio imperdiet at. Maecenas venenatis tincidunt lacinia. Phasellus finibus augue metus, vel lobortis dui rutrum vitae.',
+    	      schema: 'test',
+            calories_per_time: 200
+          }
+        ];
+      }
+    })
     .state('profile', {
       url: "/profile",
       templateUrl: "js/workout-app/partials/profile.html"
