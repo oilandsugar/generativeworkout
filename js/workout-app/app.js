@@ -12,7 +12,7 @@ angular.module('workout-app').config(function($stateProvider, $urlRouterProvider
       templateUrl: "js/workout-app/partials/home.html"
     })
     .state('home.list', {
-      url: "/list",
+      url: "list",
       templateUrl: "js/workout-app/partials/home.list.html",
       controller: function($scope) {
         $scope.exercices = [
@@ -63,5 +63,5 @@ angular.module('workout-app').config(function($stateProvider, $urlRouterProvider
     .state('register', {
       url: "/register",
       templateUrl: "js/workout-app/partials/register.html"
-    })
+    });
 });
