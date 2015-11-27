@@ -1,0 +1,65 @@
+<div class="workout">
+  <div class="settings">
+    <div class="padding">
+      <h4>
+        <div class="workout-name">
+          {{ main.workouts[0].name }}
+        </div>
+        <a href="">
+          <div class="regenerate">
+            <i class="fa fa-refresh"></i>
+          </div>
+        </a>
+      </h4>
+      <div class="actions">
+        <a href="">
+          <h4 class="underline"><i class="fa fa-plus"></i>add to my workouts</h4>
+        </a>
+      </div>
+      <div class="current-state">
+        <h3>{{ main.workouts[0].total_calories }} calories used</h3>
+        <h3>{{ main.workouts[0].total_duration }} minutes passed </h3>
+      </div>
+      <div class="type">
+        <label>type</label>
+        <select>
+          <option>warm up</option>
+          <option>cardio</option>
+          <option>muscu</option>
+        </select>
+      </div>
+      <div class="intensity">
+        <label>intensity</label>
+        <input type="range">
+      </div>
+      <div class="duration">
+        <label>duration</label>
+        <input type="range">
+      </div>
+      <div class="body-parts">
+        <label>body parts</label>
+        <div class="choices">
+          <div class="choice">
+            <div class="wrap">
+              <input type="checkbox"><label>arms</label>
+            </div>
+          </div>
+          <div class="choice">
+            <div class="wrap">
+              <input type="checkbox"><label>legs</label>
+            </div>
+          </div>
+          <div class="choice">
+            <div class="wrap">
+              <input type="checkbox"><label>back</label>
+            </div>
+          </div>
+          <div class="choice">
+            <div class="wrap">
+              <input type="checkbox"><label>abs</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

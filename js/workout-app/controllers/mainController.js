@@ -11,6 +11,15 @@ angular.module('workout-app').controller("MainController", function(){
         total_calories: 230,
   	    workout_type: 'type',
   	    body_parts: ['legs', 'back']
+      },
+      {
+        name: 'workout 002',
+        total_duration: 60,
+  	    global_intensity: 9,
+        number_of_steps: 5,
+        total_calories: 230,
+  	    workout_type: 'type',
+  	    body_parts: ['legs', 'back']
       }
     ];
     vm.exercices = [
