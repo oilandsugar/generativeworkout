@@ -21,6 +21,10 @@ a {
   text-decoration:none;
 }
 
+a:hover {
+  color:#881414;
+}
+
 h1 {
   font-size:4em;
   margin:0;
@@ -104,12 +108,31 @@ header nav {
   float:right;
 }
 
+header .login-reg {
+  height:60px;
+  position:relative;
+  padding:0 75px 0 30px;
+  cursor:pointer;
+}
+
+header .login-reg a {
+  float:left;
+  padding: 0 15px;
+}
+
+header .login-reg a h4 {
+  position:static;
+  width:auto;
+  margin:0;
+}
+
 header .user {
   line-height:60px;
   position:relative;
   overflow:hidden;
   padding:0 75px 0 30px;
   cursor:pointer;
+  display:none;
 }
 
 header .user:hover {
@@ -131,7 +154,7 @@ header nav .dropdown {
   display:none;
 }
 
-header nav:hover .dropdown {
+header .user:hover .dropdown {
   display:block;
 }
 
