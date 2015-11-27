@@ -9,10 +9,10 @@ angular.module('workout-app').config(function($stateProvider, $urlRouterProvider
   $stateProvider
     .state('home', {
       url: "/",
-      templateUrl: "partials/home.html"
+      templateUrl: "js/workout-app/partials/home.html"
     })
     .state('state2', {
       url: "/profile",
-      templateUrl: "partials/profile.html"
+      templateUrl: "js/workout-app/partials/profile.html"
     })
 });
