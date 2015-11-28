@@ -20,6 +20,11 @@ a {
   cursor:pointer;
 }
 
+a h1,
+a:hover h1 {
+  color:auto;
+}
+
 h1 {
   font-size:4em;
   margin:0;
