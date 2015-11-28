@@ -1,7 +1,6 @@
-angular.module('workout-app').controller("MainController", function(timer){
+angular.module('workout-app').controller("MainController", function(){
     var vm = this;
     vm.title = 'Generative workout';
-    vm.t = timer(60000);
     vm.workouts = [
       {
         name: 'workout 001',
