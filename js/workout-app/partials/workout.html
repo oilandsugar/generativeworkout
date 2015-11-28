@@ -35,7 +35,7 @@
           <h1>{{ main.exercices[0].reps }} reps</h1>
         </div>
         <div class="duration">
-          <h1>{{ main.exercices[0].duration }} mins</h1>
+          <h1><timer interval="60000" countdown="{{ main.exercices[0].duration }}">{{countdown}}</timer> mins</h1>
         </div>
         <div class="upcoming">
           <h4>upcoming</h4>
