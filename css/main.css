@@ -226,6 +226,12 @@ header nav li a:hover {
   margin-bottom:0;
 }
 
+.generate-button a {
+  padding: 10px;
+  display: block;
+  text-align:center;
+}
+
 .all-exercices {
   display:none;
   border-bottom: 1px solid;

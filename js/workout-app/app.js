@@ -15,7 +15,7 @@ angular.module('workout-app').config(function($stateProvider, $urlRouterProvider
       url: "/workout",
       templateUrl: "js/workout-app/partials/workout.html"
     })
-    .state('home.list', {
+    .state('workout.list', {
       url: "list",
       templateUrl: "js/workout-app/partials/home.list.html",
       controller: function($scope) {
