@@ -11,6 +11,10 @@ angular.module('workout-app').config(function($stateProvider, $urlRouterProvider
       url: "/",
       templateUrl: "js/workout-app/partials/home.html"
     })
+    .state('workout', {
+      url: "/workout",
+      templateUrl: "js/workout-app/partials/workout.html"
+    })
     .state('home.list', {
       url: "list",
       templateUrl: "js/workout-app/partials/home.list.html",

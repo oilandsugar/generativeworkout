@@ -1,99 +1,52 @@
-<div class="workout">
+<div class="generate">
   <div class="settings">
     <div class="padding">
-      <h4>
-        <div class="workout-name">
-          {{ main.workouts[0].name }}
+        <div class="type">
+          <label>type</label>
+          <select>
+            <option>warm up</option>
+            <option>cardio</option>
+            <option>muscu</option>
+          </select>
         </div>
-        <a href="">
-          <div class="regenerate">
-            <i class="fa fa-refresh"></i>
-          </div>
-        </a>
-      </h4>
-      <div class="actions">
-        <a href="">
-          <h4 class="underline"><i class="fa fa-plus"></i>add to my workouts</h4>
-        </a>
-      </div>
-      <div class="current-state">
-        <h3>{{ main.workouts[0].total_calories }} calories used</h3>
-        <h3>{{ main.workouts[0].total_duration }} minutes passed </h3>
-      </div>
-      <div class="type">
-        <label>type</label>
-        <select>
-          <option>warm up</option>
-          <option>cardio</option>
-          <option>muscu</option>
-        </select>
-      </div>
-      <div class="intensity">
-        <label>intensity</label>
-        <input type="range">
-      </div>
-      <div class="duration">
-        <label>duration</label>
-        <input type="range">
-      </div>
-      <div class="body-parts">
-        <label>body parts</label>
-        <div class="choices">
-          <div class="choice">
-            <div class="wrap">
-              <input type="checkbox"><label>arms</label>
-            </div>
-          </div>
-          <div class="choice">
-            <div class="wrap">
-              <input type="checkbox"><label>legs</label>
-            </div>
-          </div>
-          <div class="choice">
-            <div class="wrap">
-              <input type="checkbox"><label>back</label>
-            </div>
-          </div>
-          <div class="choice">
-            <div class="wrap">
-              <input type="checkbox"><label>abs</label>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="exercise current">
-    <div class="padding">
-      <div class="core">
-        <div class="name">
-          <h1>{{ main.exercices[0].name }}</h1>
-        </div>
-        <div class="number">
-          <h1>{{ main.exercices[0].reps }} reps</h1>
+        <div class="intensity">
+          <label>intensity</label>
+          <input type="range">
         </div>
         <div class="duration">
-          <h1>{{ main.exercices[0].duration }} mins</h1>
+          <label>duration</label>
+          <input type="range">
         </div>
-        <div class="upcoming">
-          <h4>upcoming</h4>
-          <h3>{{ main.exercices[1].reps }} {{ main.exercices[1].name }}</h3>
-          <h4>skip to next <i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i></h4>
-        </div>
-      </div>
-      <div class="exercice-list">
-        <a href="" id="toggle-exercice-list" ui-sref="home.list">
-          <h4 class="underline"><i class="fa fa-list"></i>See full list</h4>
-        </a>
-        <div class="all-exercices" ui-view>
-
-        </div>
-      </div>
-      <div class="schema">
-      </div>
-      <div class="explication">
-        <h4 class="underline">How to</h4>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida libero turpis, nec mattis odio imperdiet at. Maecenas venenatis tincidunt lacinia. Phasellus finibus augue metus, vel lobortis dui rutrum vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus semper ut augue vel eleifend. Ut fermentum lacus dolor, id tincidunt justo pretium ac. Duis feugiat tortor mauris, id porttitor felis imperdiet id.
+        <div class="body-parts">
+          <label>body parts</label>
+          <div class="choices">
+            <div class="choice">
+              <div class="wrap">
+                <input type="checkbox"><label>arms</label>
+              </div>
+            </div>
+            <div class="choice">
+              <div class="wrap">
+                <input type="checkbox"><label>legs</label>
+              </div>
+            </div>
+            <div class="choice">
+              <div class="wrap">
+                <input type="checkbox"><label>back</label>
+              </div>
+            </div>
+            <div class="choice">
+              <div class="wrap">
+                <input type="checkbox"><label>abs</label>
+              </div>
+            </div>
+          </div>
+          <div class="generate-button">
+            <a href="">
+              <i class="fa fa-refresh"></i> generate
+            </a>
+          </div>
       </div>
     </div>
   </div>
+</div>

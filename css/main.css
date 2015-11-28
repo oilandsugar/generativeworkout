@@ -213,6 +213,15 @@ header nav li a:hover {
   border-right:0;
 }
 
+.exercise .core .upcoming h4 {
+  padding-top:5px;
+}
+
+.exercise .core .upcoming h3 {
+  line-height: 0.8em;
+  padding-top: 7px;
+}
+
 .exercice-list h4 {
   margin-bottom:0;
 }
