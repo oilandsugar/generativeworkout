@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>generative workout</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/hot.css">
+    <link rel="stylesheet" id="switch-style" href="css/hot.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -18,9 +18,9 @@
 <body ng-app="workout-app" ng-controller="MainController as main">
   <header>
     <div class="themes">
-      <a href="" class="theme fire"><i class="fa fa-fire-extinguisher"></i></a>
-      <a href="" class="theme water"><i class="fa fa-tint"></i></a>
-      <a href="" class="theme healthgoth"><i class="fa fa-circle"></i></a>
+      <a id="hot" class="theme fire"><i class="fa fa-fire-extinguisher"></i></a>
+      <a id="cool" class="theme water"><i class="fa fa-tint"></i></a>
+      <a id="healthgoth" class="theme healthgoth"><i class="fa fa-circle"></i></a>
     </div>
     <a id="home" ui-sref="home">
       <h4>

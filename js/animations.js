@@ -7,5 +7,10 @@ jQuery(function($) {
     });
     $( ".all-exercices" ).sortable();
     $( ".all-exercices" ).disableSelection();
+
+    $('.themes').find('a').click(function(){
+      var id = $(this).attr("id");
+    	$("#switch-style").attr("href", id + ".css");
+    });
   });
 });
