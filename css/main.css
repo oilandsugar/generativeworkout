@@ -7,8 +7,6 @@ body {
   margin:0;
   width:100%;
   height:100%;
-  background:#EA5837;
-  color:#881414;
 }
 
 .padding {
@@ -20,10 +18,6 @@ a {
   color:#fff;
   text-decoration:none;
   cursor:pointer;
-}
-
-a:hover {
-  color:#881414;
 }
 
 h1 {
@@ -44,7 +38,6 @@ h3 {
 h3.underline {
   padding-bottom:15px;
   margin-bottom:15px;
-  border-bottom:1px solid #881414;
 }
 
 h4 {
@@ -57,7 +50,6 @@ h4 {
 h4.underline {
   padding-bottom:15px;
   margin-bottom:15px;
-  border-bottom:1px solid #881414;
 }
 
 h4.underline i {
@@ -71,7 +63,6 @@ header {
   top:0;
   left:0;
   right:0;
-  background:#EA5837;
 }
 
 header h4 {
@@ -140,10 +131,6 @@ header .user {
   display:none;
 }
 
-header .user:hover {
-  background:#881414;
-}
-
 header .user .profile-pic,
 header .user .name,
 header .user .icon {
@@ -178,7 +165,6 @@ header nav li a {
   line-height:60px;
   padding:0 30px;
   display:block;
-  background:#881414;
 }
 
 header nav li a:hover {
@@ -237,7 +223,6 @@ header nav li a:hover {
   border-bottom:1px solid;
   border-top:1px solid;
   line-height: 60px;
-  background:#EA5837;
 }
 
 .small-exercice h2 {
@@ -274,8 +259,6 @@ input,
 select {
   width:100%;
   margin:10px 0;
-  background:#881414;
-  color:#EA5837;
   border:0;
 }
 
@@ -307,13 +290,11 @@ label {
 .workout .settings h4 {
   padding-bottom:15px;
   margin-bottom:15px;
-  border-bottom:1px solid #881414;
 }
 
 .workout .settings .current-state {
   padding-bottom:15px;
   margin-bottom:15px;
-  border-bottom:1px solid #881414;
 }
 
 .main .settings .choices {
@@ -338,8 +319,6 @@ label {
 
 .main .settings .choices .choice .wrap {
   padding:0 8px;
-  background:#881414;
-  color:#EA5837;
   overflow:hidden;
   border-radius:4px;
   box-sizing:border-box;
