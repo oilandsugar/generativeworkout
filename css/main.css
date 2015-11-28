@@ -301,6 +301,7 @@ label {
   font-size: 1rem;
   box-sizing: border-box;
   color:#fff;
+  border-radius:4px;
 }
 
 .workout .settings h4 {
