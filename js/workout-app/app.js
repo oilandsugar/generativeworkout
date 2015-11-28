@@ -1,4 +1,5 @@
 angular.module('workout-app', ['ui.router'])
+
 .factory('timer', function($interval){
     return function(delay){
         var initialMs= (new Date()).getTime();
@@ -10,6 +11,7 @@ angular.module('workout-app', ['ui.router'])
         return result;
     };
 })
+
 angular.module('workout-app').config(function($stateProvider, $urlRouterProvider) {
   //
   // For any unmatched url, redirect to /state1
