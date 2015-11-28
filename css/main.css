@@ -92,6 +92,10 @@ header h4 {
   padding: 0 5px;
 }
 
+.themes a:hover {
+  color:#fff;
+}
+
 .themes .water {
   color:#CCCCF5;
 }
