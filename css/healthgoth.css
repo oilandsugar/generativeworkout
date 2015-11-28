@@ -1,18 +1,18 @@
 body {
   background:#000;
-  color:#B7B7B7;
+  color:#505050;
 }
 
 a:hover {
-  color:#B7B7B7;
+  color:#505050;
 }
 
 h3.underline {
-  border-bottom:1px solid #B7B7B7;
+  border-bottom:1px solid #505050;
 }
 
 h4.underline {
-  border-bottom:1px solid #B7B7B7;
+  border-bottom:1px solid #505050;
 }
 
 header {
@@ -20,11 +20,11 @@ header {
 }
 
 header .user:hover {
-  background:#B7B7B7;
+  background:#505050;
 }
 
 header nav li a {
-  background:#B7B7B7;
+  background:#505050;
 }
 
 .small-exercice {
@@ -33,41 +33,41 @@ header nav li a {
 
 input,
 select {
-  background:#B7B7B7;
+  background:#505050;
   color:#000;
 }
 
 .workout .settings h4 {
-  border-bottom:1px solid #B7B7B7;
+  border-bottom:1px solid #505050;
 }
 
 .workout .settings .current-state {
-  border-bottom:1px solid #B7B7B7;
+  border-bottom:1px solid #505050;
 }
 
 .main .settings .choices .choice .wrap {
-  background:#B7B7B7;
+  background:#505050;
   color:#000;
 }
 
 input[type=range]::-webkit-slider-runnable-track {
-  background: #B7B7B7;
+  background: #505050;
 }
 input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #B7B7B7;
+  background: #505050;
 }
 input[type=range]::-moz-range-track {
-  background: #B7B7B7;
+  background: #505050;
 }
 input[type=range]::-ms-fill-lower {
-  background: #B7B7B7;
+  background: #505050;
 }
 input[type=range]:focus::-ms-fill-lower {
-  background: #B7B7B7;
+  background: #505050;
 }
 input[type=range]::-ms-fill-upper {
-  background: #B7B7B7;
+  background: #505050;
 }
 input[type=range]:focus::-ms-fill-upper {
-  background: #B7B7B7;
+  background: #505050;
 }
