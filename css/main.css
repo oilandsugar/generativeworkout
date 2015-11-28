@@ -19,6 +19,7 @@ body {
 a {
   color:#fff;
   text-decoration:none;
+  cursor:pointer;
 }
 
 a:hover {
@@ -291,6 +292,15 @@ select {
 label {
   font-size:0.8rem;
   font-family:helvetica, sans-serif;
+}
+
+.regular-form input[type=text],
+.regular-form input[type=password],
+.regular-form input[type=email] {
+  padding: 10px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  color:#fff;
 }
 
 .workout .settings h4 {
