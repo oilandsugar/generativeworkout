@@ -84,19 +84,19 @@ header h4 {
   padding: 0 5px;
 }
 
-.themes a:hover {
+.themes a {
   color:#fff;
 }
 
-.themes .water {
+.themes .water:hover {
   color:#CCCCF5;
 }
 
-.themes .fire {
+.themes .fire:hover {
   color:#881414;
 }
 
-.themes .healthgoth {
+.themes .healthgoth:hover {
   color:#000;
 }
 
@@ -209,6 +209,10 @@ header nav li a:hover {
   float:left;
 }
 
+.exercise .core div.upcoming {
+  border-right:0;
+}
+
 .exercice-list h4 {
   margin-bottom:0;
 }
@@ -260,6 +264,7 @@ select {
   width:100%;
   margin:10px 0;
   border:0;
+  cursor:pointer;
 }
 
 input:focus,
