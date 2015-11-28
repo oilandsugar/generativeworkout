@@ -10,7 +10,7 @@ jQuery(function($) {
 
     $('.themes').find('a').click(function(){
       var id = $(this).attr("id");
-    	$("#switch-style").attr("href", id + ".css");
+    	$("#switch-style").attr("href", "css/" + id + ".css");
     });
   });
 });
