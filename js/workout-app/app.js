@@ -10,9 +10,6 @@ angular.module('workout-app', ['ui.router'])
         return result;
     };
 })
-.controller('workout-controller', function($scope, timer){
-    $scope.t = MyTimer(1000);
-});
 angular.module('workout-app').config(function($stateProvider, $urlRouterProvider) {
   //
   // For any unmatched url, redirect to /state1
