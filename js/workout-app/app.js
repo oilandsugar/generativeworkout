@@ -1,16 +1,4 @@
-angular.module('workout-app', ['ui.router'])
-
-.factory('timer', function($interval){
-    return function(delay){
-        var initialMs= (new Date()).getTime();
-        var result = {totalMilliseconds:0, counts:0};
-        $interval(function() {
-            result.totalMilliseconds = (new Date()).getTime() - initialMs;
-            result.counts++;
-        }, delay);
-        return result;
-    };
-})
+angular.module('workout-app', ['ui.router', 'timer'])
 
 angular.module('workout-app').config(function($stateProvider, $urlRouterProvider) {
   //
