@@ -22,7 +22,6 @@ angular.module('workout-app').config(function ($stateProvider, $urlRouterProvide
     // Now set up the states
     $stateProvider
         .state('base', {
-            url: "/",
             templateUrl: "js/workout-app/partials/base.html",
             controller: "MainController as main"
         })
