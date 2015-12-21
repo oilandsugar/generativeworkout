@@ -9,7 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-    <script src="js/workout-app/angular.min.js"></script>
+    <script src="js/workout-app/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
     <script src="js/workout-app/angular-timer.min.js"></script>
     <script src="js/bower_components/humanize-duration/humanize-duration.js"></script>
@@ -17,60 +17,10 @@
     <script src="js/bower_components/momentjs/min/locales.min.js"></script>
     <script src="js/workout-app/app.js"></script>
     <script src="js/workout-app/controllers/mainController.js"></script>
+    <script src="js/workout-app/controllers/loginCtrl.js"></script>
     <script src="js/animations.js"></script>
 </head>
-<body ng-app="workout-app" ng-controller="MainController as main">
-  <header>
-    <div class="themes">
-      <a id="hot" class="theme fire"><i class="fa fa-fire-extinguisher"></i></a>
-      <a id="cool" class="theme water"><i class="fa fa-tint"></i></a>
-      <a id="healthgoth" class="theme healthgoth"><i class="fa fa-circle"></i></a>
-    </div>
-    <a id="home" ui-sref="home">
-      <h4>
-        {{ main.title }}
-      </h4>
-    </a>
-    <nav>
-      <div class="login-reg">
-        <a id="login" ui-sref="login"><h4>login</h4></a>
-        <a id="register" ui-sref="register"><h4>register</h4></a>
-      </div>
-      <div class="user">
-        <div class="profile-pic">
-          <img src="">
-        </div>
-        <div class="name">
-          <h4>
-            Tommy Poirier-Morissette
-          </h4>
-          </div>
-        <div class="icon"><i class="fa fa-chevron-down"></i></div>
-      </div>
-      <div class="dropdown">
-        <ul>
-          <li>
-            <a href="">
-              my account
-            </a>
-          </li>
-          <li>
-            <a href="">
-              my workouts
-            </a>
-          </li>
-          <li>
-            <a href="">
-              i'm done
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <div class="main">
-    <div class="wrap" ui-view>
-    </div>
-  </div>
+<body ng-app="workout-app">
+    <div class="content" ui-view></div>
 </body>
 </html>
