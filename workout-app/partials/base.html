@@ -1,0 +1,56 @@
+<header>
+    <div class="themes">
+        <a id="hot" class="theme fire"><i class="fa fa-fire-extinguisher"></i></a>
+        <a id="cool" class="theme water"><i class="fa fa-tint"></i></a>
+        <a id="healthgoth" class="theme healthgoth"><i class="fa fa-circle"></i></a>
+    </div>
+    <a id="home" ui-sref="home">
+        <h4>
+            {{ main.title }}
+        </h4>
+    </a>
+    <nav>
+        <div class="login-reg" ng-if="!main.user">
+            <a id="login" ui-sref="base.login"><h4>login</h4></a>
+            <a id="register" ui-sref="register"><h4>register</h4></a>
+        </div>
+        <div class="login-welcome" ng-if="main.user">
+            <a id="login-activity" ui-sref="base.create_activity"><h4>Log Activity</h4></a>
+            <h4>Welcome {{main.user.username}}</h4>
+        </div>
+        <div class="user">
+            <div class="profile-pic">
+                <img src="">
+            </div>
+            <div class="name">
+                <h4>
+                    Tommy Poirier-Morissette
+                </h4>
+            </div>
+            <div class="icon"><i class="fa fa-chevron-down"></i></div>
+        </div>
+        <div class="dropdown">
+            <ul>
+                <li>
+                    <a href="">
+                        my account
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        my workouts
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        i'm done
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<div class="main">
+    <div class="wrap" ui-view>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+{
+  "name": "generativeworkout",
+  "version": "0.0.0",
+  "description": "Minimal generative work out sequence generator ## TODO * Logout * Profile page (Read|Edit) * Add activity * See activity (month/week/custom view) * Auto-generated workout",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oilandsugar/generativeworkout.git"
+  },
+  "author": "oilandsugar, girardvjonathan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oilandsugar/generativeworkout/issues"
+  },
+  "devDependencies": {
+    "angular": "^1.4.8",
+    "angular-timer": "^1.3.3",
+    "angular-ui-router": "^0.2.15",
+    "datetimepicker": "^0.1.25",
+    "font-awesome": "^4.5.0",
+    "humanize-duration": "^3.4.0",
+    "jquery": "^2.1.4",
+    "jquery-ui": "^1.10.5",
+    "moment": "^2.10.6"
+  }
+}

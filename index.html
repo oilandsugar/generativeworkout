@@ -3,22 +3,23 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>generative workout</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" id="switch-style" href="css/hot.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="workout-app/assets/css/main.css">
+    <link rel="stylesheet" id="switch-style" href="workout-app/assets/css/hot.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-    <script src="js/workout-app/angular.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
-    <script src="js/workout-app/angular-timer.min.js"></script>
-    <script src="js/bower_components/humanize-duration/humanize-duration.js"></script>
-    <script src="js/bower_components/momentjs/min/moment.min.js"></script>
-    <script src="js/bower_components/momentjs/min/locales.min.js"></script>
-    <script src="js/workout-app/app.js"></script>
-    <script src="js/workout-app/controllers/mainController.js"></script>
-    <script src="js/workout-app/controllers/loginCtrl.js"></script>
-    <script src="js/animations.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/jquery-ui/jquery-ui.js"></script>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-ui-router/build/angular-ui-router.js"></script>
+    <script src="node_modules/angular-timer/dist/angular-timer.min.js"></script>
+    <script src="node_modules/humanize-duration/humanize-duration.js"></script>
+    <script src="node_modules/moment/min/moment.min.js"></script>
+    <script src="node_modules/moment/min/locales.min.js"></script>
+    <script src="workout-app/app.js"></script>
+    <script src="workout-app/controllers/mainController.js"></script>
+    <script src="workout-app/controllers/loginCtrl.js"></script>
+    <script src="workout-app/controllers/activityFormCtrl.js"></script>
+    <script src="workout-app/assets/js/animations.js"></script>
 </head>
 <body ng-app="workout-app">
     <div class="content" ui-view></div>
