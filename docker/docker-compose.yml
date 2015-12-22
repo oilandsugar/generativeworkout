@@ -1,0 +1,9 @@
+web-angular:
+  build: .
+  volumes:
+    - ../:/code
+    - .:/docker
+  dockerfile: Dockerfile
+  ports:
+    - "8009:80"
+  hostname: docker

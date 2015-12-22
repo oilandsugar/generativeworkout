@@ -1,9 +1,10 @@
 <div class="wrap">
   <h4 class="underline">login</h4>
-  <form class="regular-form">
-    <label for="login-email">email</label>
-    <input name="login-email" type="email" required>
+  <form class="regular-form" novalidate>
+    <label for="login-email">Username</label>
+    <input id="login-email" name="login-email" type="text" required ng-model="user.username">
     <label for="login-password">password</label>
-    <input name="login-password" type="password" required>
+    <input id="login-password" name="login-password" type="password" required ng-model="user.password">
+    <input type="submit" ng-click="login.login(user)" value="Login">
   </form>
 </div>

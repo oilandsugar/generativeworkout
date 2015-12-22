@@ -116,6 +116,13 @@ header .login-reg {
   cursor:pointer;
 }
 
+header .login-welcome {
+  height:60px;
+  position:relative;
+  padding:0 150px 0 30px;
+  cursor:pointer;
+}
+
 header .login-reg a {
   float:left;
   padding: 0 15px;
