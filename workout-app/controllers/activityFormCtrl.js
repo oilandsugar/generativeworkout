@@ -11,14 +11,25 @@
     function ActivityForm($http, $stateParams, $rootScope, $state, User) {
         console.log('in controller login');
         var vm = this;
+        $('#activity-date').datetimepicker();
         vm.create = function (activity) {
             console.log(activity);
+            activity.date = activity.date.replace(/\//g, '-').replace(' ', 'T');
+            var time;
+            if (activity.duration.hours != 0 && typeof  activity.duration.hours != 'undefined') {
+                time = activity.duration.hours + ":";
+            } else {
+                time = '00:'
+            }
+            time += activity.duration.min + "[:" + activity.duration.sec +']';
+            console.log(time);
+            console.log(activity.date);
             $http({
                 method: 'POST',
                 url: 'http://168.235.153.11/router/activity/',
                 data: {
                     date: activity.date,
-                    duration: activity.duration,
+                    duration: time,
                     distance: activity.distance,
                     repetition: activity.repetition
                 }
@@ -27,7 +38,7 @@
                 $state.go('base.home');
 
             }, function errorCallback(response) {
-                alert('failed: '+ response);
+                alert('failed: ' + response);
             });
 
         }

@@ -4,6 +4,7 @@ npm install
 ## TODO
 * Logout
 * Profile page (Read|Edit)
-* Add activity
+* Add activity [partially done]
 * See activity (month/week/custom view)
 * Auto-generated workout
+* cookie session

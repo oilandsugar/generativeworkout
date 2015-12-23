@@ -19,6 +19,9 @@
                 //data: {date: '2013-01-01T20:00', duration:'20:00'}
             }).then(function successCallback(response) {
                 User.setUser(response.data);
+                $http.defaults.headers.common.Authorization = "Basic " +
+                    btoa(user.username + ':' + user.password);
+
                 $state.go('base.home', {}, {reload: true});
 
             }, function errorCallback(response) {

@@ -1,4 +1,4 @@
-web-angular:
+generative-workout:
   build: .
   volumes:
     - ../:/code

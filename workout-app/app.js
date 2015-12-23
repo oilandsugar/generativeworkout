@@ -1,11 +1,4 @@
 angular.module('workout-app', ['ui.router', 'timer'])
-    .run(function ($http, $rootScope) {
-        if ($rootScope.username) {
-            console.log('adding authorization cause username is set');
-            $http.defaults.headers.common.Authorization = $rootScope.username + ':' + $rootScope.password;
-            return;
-        }
-    })
     .service('User', function () {
         this.getUser = function () {
             return this.user;
@@ -85,7 +78,7 @@ angular.module('workout-app').config(function ($stateProvider, $urlRouterProvide
         }).state('base.create_activity', {
             url: "/create/activity",
             templateUrl: "workout-app/partials/activity_form.html",
-            controller: "activityFormCtrl as activity"
+            controller: "activityFormCtrl as activityForm"
         })
         .state('register', {
             url: "/register",
