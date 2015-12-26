@@ -1,4 +1,4 @@
-angular.module('workout-app', ['ui.router', 'timer'])
+angular.module('workout-app', ['ui.router', 'timer', 'ngCookies'])
     .service('User', function () {
         this.getUser = function () {
             return this.user;
@@ -10,7 +10,7 @@ angular.module('workout-app', ['ui.router', 'timer'])
 angular.module('workout-app').config(function ($stateProvider, $urlRouterProvider) {
     //
     // For any unmatched url, redirect to /state1
-    $urlRouterProvider.otherwise("/home");
+    //$urlRouterProvider.otherwise("/home");
     //
     // Now set up the states
     $stateProvider

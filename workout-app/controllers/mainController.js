@@ -1,8 +1,18 @@
 angular.module('workout-app')
-    .controller("MainController", function (User) {
-        console.log('in main controller');
+    .controller("MainController", function (User, $cookies, $http) {
         var vm = this;
         vm.user = User.getUser();
+        var auth = $cookies.get('session');
+        if (typeof vm.user == 'undefined' && typeof auth != 'undefined') {
+            $http.defaults.headers.common.Authorization = auth;
+            $http({
+                method: 'POST',
+                url: 'http://localhost/api/auth/'
+            }).then(function successCallback(response) {
+                vm.user = response.data;
+                User.setUser(vm.user);
+            });
+        }
         vm.title = 'Generative workout';
         vm.workouts = [
             {
