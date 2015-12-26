@@ -14,8 +14,8 @@
             <a id="login" ui-sref="base.login"><h4>login</h4></a>
             <a id="register" ui-sref="register"><h4>register</h4></a>
         </div>
-        <div class="login-welcome" ng-if="main.user">
-            <a id="login-activity" ui-sref="base.create_activity"><h4>Log Activity</h4></a>
+        <div class="login-logged" ng-if="main.user">
+            <a id="login-activity" ui-sref="base.create_activity"><h4 class="menu-activity">Log Activity</h4></a>
             <h4>Welcome {{main.user.username}}</h4>
         </div>
         <div class="user">

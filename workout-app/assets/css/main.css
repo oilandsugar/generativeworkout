@@ -134,6 +134,25 @@ header .login-reg a h4 {
   margin:0;
 }
 
+header .login-logged a{
+  float:left;
+  padding: 0 15px;
+}
+header .login-logged {
+  height:60px;
+  position:relative;
+  padding:0 75px 0 30px;
+  cursor:pointer;
+}
+header .login-logged a h4 {
+  position:static;
+  width:auto;
+  margin:0;
+}
+header .menu-activity {
+  padding: 0 197px 0 0;
+}
+
 header .user {
   line-height:60px;
   position:relative;

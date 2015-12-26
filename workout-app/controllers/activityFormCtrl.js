@@ -15,27 +15,26 @@
 
         vm.create = function (activity) {
             console.log(activity);
-            activity.date = activity.date.replace(/\//g, '-').replace(' ', 'T');
-            if (activity.duration.min < 10) {
-                activity.duration.min = '0' + activity.duration.min;
-            }
-            if (activity.duration.sec < 10) {
-                activity.duration.sec = '0' + activity.duration.sec;
-            }
+            var date = activity.date.replace(/\//g, '-').replace(' ', 'T');
+
+            var sec;
+            var min;
             var time;
+
+            (activity.duration.sec < 10) ? sec = '0' + activity.duration.sec : sec = activity.duration.sec;
+            (activity.duration.min < 10) ? min = '0' + activity.duration.min : min = activity.duration.min;
+
             if (activity.duration.hours != 0 && typeof  activity.duration.hours != 'undefined') {
                 time = activity.duration.hours + ":";
             } else {
                 time = '00:'
             }
-            time += activity.duration.min + "[:" + activity.duration.sec + ']';
-            console.log(time);
-            console.log(activity.date);
+            time += min + ":" + sec;
             $http({
                 method: 'POST',
                 url: 'http://localhost/router/activity/',
                 data: {
-                    date: activity.date,
+                    date: date,
                     duration: time,
                     distance: activity.distance,
                     repetition: activity.repetition
