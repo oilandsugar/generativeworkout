@@ -8,6 +8,7 @@ docker-compose up
 * Register
 * Profile page (Read|Edit)
 * See activity (month/week/custom view)
+    * Change current week
 * Auto-generated workout
 * Add activity [done]
 * cookie session [Done]
