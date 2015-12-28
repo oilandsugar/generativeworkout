@@ -1,12 +1,4 @@
-angular.module('workout-app', ['ui.router', 'timer', 'ngCookies'])
-    .service('User', function () {
-        this.getUser = function () {
-            return this.user;
-        };
-        this.setUser = function (user) {
-            this.user = user;
-        };
-    });
+angular.module('workout-app', ['ui.router', 'timer', 'ngCookies']);
 angular.module('workout-app').config(function ($stateProvider, $urlRouterProvider) {
     //
     // For any unmatched url, redirect to /state1
@@ -83,5 +75,12 @@ angular.module('workout-app').config(function ($stateProvider, $urlRouterProvide
         .state('register', {
             url: "/register",
             templateUrl: "workout-app/partials/register.html"
-        });
+        }).state('base.activityList', {
+            url: "/activity",
+            templateUrl: "workout-app/partials/activity_list.html",
+            controller: "activityListCtrl as ctrlActivity"
+        })
+
+
+    ;
 });
