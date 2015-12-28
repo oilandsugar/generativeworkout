@@ -16,8 +16,9 @@
         </div>
         <div class="login-logged" ng-if="main.user">
             <!--<a id="login-activity" ui-sref="base.create_activity"><h4 class="menu-activity">Log Activity</h4></a>-->
-            <a id="login-activity" ui-sref="base.activityList"><h4 class="menu-activity">Log Activity</h4></a>
-            <h4>Welcome {{main.user.username}}</h4>
+            <a id="see-activity" ui-sref="base.activity_list"><h4>See Activity</h4></a>
+            <a id="login-activity" ui-sref="base.create_activity"><h4 class="menu-activity">Log Activity</h4></a>
+            <h4 class="top-menu-name">Welcome {{main.user.username}}</h4>
         </div>
         <div class="user">
             <div class="profile-pic">

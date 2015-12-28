@@ -150,7 +150,10 @@ header .login-logged a h4 {
   margin:0;
 }
 header .menu-activity {
-  padding: 0 197px 0 0;
+  padding: 0 90px 0 0;
+}
+header .top-menu-name {
+  left: 80%;
 }
 
 header .user {
