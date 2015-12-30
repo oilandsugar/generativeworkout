@@ -7,7 +7,7 @@ angular.module('workout-app')
             $http.defaults.headers.common.Authorization = auth;
             $http({
                 method: 'POST',
-                url: 'http://localhost/api/auth/'
+                url: 'http://localhost:8009/api/auth/'
             }).then(function successCallback(response) {
                 vm.user = response.data;
                 User.setUser(vm.user);

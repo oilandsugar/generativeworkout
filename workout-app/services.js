@@ -15,7 +15,7 @@ angular.module('workout-app')
             return $q(function (resolve, reject) {
                 $http({
                     method: 'GET',
-                    url: 'http://localhost/activity'
+                    url: 'http://localhost:8009/activity'
                 }).then(function successCallback(response) {
                     resolve(response.data);
                 }, function errorCallback() {

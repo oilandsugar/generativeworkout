@@ -32,7 +32,7 @@
             time += min + ":" + sec;
             $http({
                 method: 'POST',
-                url: 'http://localhost/router/activity/',
+                url: 'http://localhost:8009/router/activity/',
                 data: {
                     date: date,
                     duration: time,

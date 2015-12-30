@@ -11,7 +11,7 @@
         vm.login = function (user) {
             $http({
                 method: 'POST',
-                url: 'http://localhost/api/auth/',
+                url: 'http://localhost:8009/api/auth/',
                 headers: {
                     'Authorization': "Basic " +
                     btoa(user.username + ':' + user.password)
