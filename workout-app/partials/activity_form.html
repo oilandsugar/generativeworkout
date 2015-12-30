@@ -1,0 +1,16 @@
+<div class="wrap">
+    <h4 class="underline">Create Activity</h4>
+    <form class="regular-form">
+        <label for="activity-date">Date</label>
+        <input id="activity-date" type="text" ng-model="activity.date" required>
+        <span >Duration</span>
+        Hours<input id="activity-duration-Hours" type="number" ng-model="activity.duration.hours" min="0" max="99" required>
+        Minutes<input id="activity-duration-Min" type="number" ng-model="activity.duration.min" min="0" max="59" required>
+        Seconds<input id="activity-duration-Sec" type="number" ng-model="activity.duration.sec" min="0" max="59" required>
+        <label for="activity-distance">Distance</label>
+        <input id="activity-distance" type="number" min="0" ng-model="activity.distance">
+        <label for="activity-repetition">Repetition</label>
+        <input id="activity-repetition" type="number" min="0" ng-model="activity.repetition">
+        <input type="submit" ng-click="activityForm.create(activity)" value="Log my Activity">
+    </form>
+</div>

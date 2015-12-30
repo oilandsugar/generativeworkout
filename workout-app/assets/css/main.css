@@ -1,0 +1,514 @@
+html {
+  height:100%;
+  width:100%;
+}
+
+body {
+  margin:0;
+  width:100%;
+  height:100%;
+}
+
+.padding {
+  padding:40px;
+  box-sizing: border-box;
+}
+
+a {
+  color:#fff;
+  text-decoration:none;
+  cursor:pointer;
+}
+
+a h1,
+a:hover h1 {
+  color:auto;
+}
+
+h1 {
+  font-size:4em;
+  margin:0;
+  font-family: 'Oswald', sans-serif;
+  color:#fff;
+}
+
+h3 {
+  margin:0;
+  font-size:2em;
+  font-family: 'Oswald', sans-serif;
+  color:#fff;
+  line-height: 1.1em;
+}
+
+h3.underline {
+  padding-bottom:15px;
+  margin-bottom:15px;
+}
+
+h4 {
+  font-family: 'Oswald', sans-serif;
+  text-transform:uppercase;
+  letter-spacing: 1px;
+  margin:0;
+}
+
+h4.underline {
+  padding-bottom:15px;
+  margin-bottom:15px;
+}
+
+h4.underline i {
+   margin-right:15px;
+}
+
+header {
+  height:60px;
+  width:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+}
+
+header h4 {
+  position:absolute;
+  left:50%;
+  width:200px;
+  margin:0 0 0 -100px;
+  line-height:60px;
+  text-align:center;
+}
+
+.themes {
+  line-height: 60px;
+  float: left;
+  padding: 0 30px 0 75px;
+}
+
+.themes a {
+  padding: 0 5px;
+}
+
+.themes a {
+  color:#fff;
+}
+
+.themes .water:hover {
+  color:#CCCCF5;
+}
+
+.themes .fire:hover {
+  color:#881414;
+}
+
+.themes .healthgoth:hover {
+  color:#000;
+}
+
+header nav {
+  float:right;
+}
+
+header .login-reg {
+  height:60px;
+  position:relative;
+  padding:0 75px 0 30px;
+  cursor:pointer;
+}
+
+header .login-welcome {
+  height:60px;
+  position:relative;
+  padding:0 150px 0 30px;
+  cursor:pointer;
+}
+
+header .login-reg a {
+  float:left;
+  padding: 0 15px;
+}
+
+header .login-reg a h4 {
+  position:static;
+  width:auto;
+  margin:0;
+}
+
+header .login-logged a{
+  float:left;
+  padding: 0 15px;
+}
+header .login-logged {
+  height:60px;
+  position:relative;
+  padding:0 75px 0 30px;
+  cursor:pointer;
+}
+header .login-logged a h4 {
+  position:static;
+  width:auto;
+  margin:0;
+}
+header .menu-activity {
+  padding: 0 90px 0 0;
+}
+header .top-menu-name {
+  left: 80%;
+}
+
+header .user {
+  line-height:60px;
+  position:relative;
+  overflow:hidden;
+  padding:0 75px 0 30px;
+  cursor:pointer;
+  display:none;
+}
+
+header .user .profile-pic,
+header .user .name,
+header .user .icon {
+  float:left;
+}
+
+header .user .icon {
+  font-size: 12px;
+  margin-left:20px;
+}
+
+header nav .dropdown {
+  display:none;
+}
+
+header .user:hover .dropdown {
+  display:block;
+}
+
+header nav ul {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+header nav ul li {
+  margin:0;
+  padding:0;
+}
+
+header nav li a {
+  line-height:60px;
+  padding:0 30px;
+  display:block;
+}
+
+header nav li a:hover {
+  background:#fff;
+}
+
+.main {
+  padding-top:80px;
+}
+
+.wrap {
+  padding:40px;
+}
+
+.main .workout h4 {
+  width:100%;
+  overflow:hidden;
+}
+
+.main .settings {
+  overflow:hidden;
+  width:25%;
+  float:left;
+}
+
+.main .settings .workout-name {
+  float:left;
+  width:calc(100% - 30px);
+}
+
+.main .settings .regenerate {
+  float:right;
+  width:30px;
+}
+
+.main .settings div {
+  width:100%;
+}
+
+.main .exercise {
+  width:75%;
+  float:left;
+}
+
+.exercise .core div.upcoming {
+  border-right:0;
+}
+
+.exercise .core .upcoming h4 {
+  padding-top:5px;
+}
+
+.exercise .core .upcoming h3 {
+  line-height: 0.8em;
+  padding-top: 7px;
+}
+
+.exercice-list h4 {
+  margin-bottom:0;
+}
+
+.generate-button a {
+  padding: 10px;
+  display: block;
+  text-align:center;
+}
+
+.all-exercices {
+  display:none;
+  border-bottom: 1px solid;
+}
+
+.small-exercice {
+  overflow:hidden;
+  border-bottom:1px solid;
+  border-top:1px solid;
+  line-height: 60px;
+}
+
+.small-exercice h2 {
+  margin:0;
+  font-family: 'Oswald', sans-serif;
+  color:#fff;
+  font-size:2em;
+}
+
+.small-exercice div {
+  float:left;
+  width:20%;
+  padding-right:20px;
+  margin-right:20px;
+  border-right:1px solid;
+}
+
+.small-exercice div.action {
+  width:auto;
+  border-right:0;
+  padding-right:30px;
+  margin-right:0;
+}
+
+.small-exercice div.move {
+  cursor:all-scroll;
+}
+
+.explication h4 {
+  margin-top:15px;
+}
+
+input,
+select {
+  width:100%;
+  margin:10px 0;
+  border:0;
+  cursor:pointer;
+}
+
+input:focus,
+select:focus {
+  outline:none;
+}
+
+select {
+  height:30px;
+  font-size:0.8rem;
+}
+
+label {
+  font-size:0.8rem;
+  font-family:helvetica, sans-serif;
+}
+
+.regular-form input[type=text],
+.regular-form input[type=password],
+.regular-form input[type=email] {
+  padding: 10px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  color:#fff;
+  border-radius:4px;
+}
+
+.workout .settings h4 {
+  padding-bottom:15px;
+  margin-bottom:15px;
+}
+
+.workout .settings .current-state {
+  padding-bottom:15px;
+  margin-bottom:15px;
+}
+
+.main .settings .choices {
+  overflow:hidden;
+  width:calc(100% + 10px);
+  margin-left:-5px;
+}
+
+.choices input {
+  width:30px;
+  float:left;
+  margin:14px 0;
+}
+
+.main .settings .choices .choice {
+  float:left;
+  width:50%;
+  overflow:hidden;
+  padding:5px;
+  box-sizing:border-box;
+}
+
+.main .settings .choices .choice .wrap {
+  padding:0 8px;
+  overflow:hidden;
+  border-radius:4px;
+  box-sizing:border-box;
+  cursor:pointer;
+}
+
+.choices label {
+  float:left;
+  margin:10px 0;
+}
+
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent; /* Hides the slider so custom styles can be added */
+  border-color: transparent;
+  color: transparent;
+}
+
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 7.5px;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -5px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: none;
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  box-shadow: none;
+  border: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 7.5px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  border: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 7.5px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  box-shadow: none;
+  background: #881414;
+  border-radius: 4px;
+  border: 0;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #881414;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  box-shadow: none;
+  background: #881414;
+  border-radius: 4px;
+  border: 0;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #881414;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: none;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #881414;
+}
+input[type=range]::-ms-fill-upper {
+  background: #881414;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: none;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #881414;
+}
+
+.exercise .core {
+  overflow:hidden;
+  margin-bottom:30px;
+}
+
+.exercise .core div {
+  float:left;
+  margin-right:20px;
+  padding-right:20px;
+  border-right:1px solid;
+}
+
+.user-big {
+  width:25%;
+  float:left;
+}
+
+.profile .data {
+  width:75%;
+  float:left;
+}

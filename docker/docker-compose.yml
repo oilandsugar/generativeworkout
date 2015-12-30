@@ -1,9 +1,9 @@
-web-angular:
+generative-workout:
   build: .
   volumes:
     - ../:/code
     - .:/docker
   dockerfile: Dockerfile
   ports:
-    - "8009:80"
+    - "80:80"
   hostname: docker
