@@ -68,9 +68,10 @@ angular.module('workout-app').config(function ($stateProvider, $urlRouterProvide
             templateUrl: "workout-app/partials/login.html",
             controller: "loginCtrl as login"
         })
-        .state('register', {
+        .state('base.register', {
             url: "/register",
-            templateUrl: "workout-app/partials/register.html"
+            templateUrl: "workout-app/partials/register.html",
+            controller: "registerCtrl as reg"
         })
         //Activity state
         .state('base.create_activity', {
@@ -81,6 +82,9 @@ angular.module('workout-app').config(function ($stateProvider, $urlRouterProvide
             url: "/activity",
             templateUrl: "workout-app/partials/activity_list.html",
             controller: "activityListCtrl as ctrlActivity"
+        }).state('logout', {
+            url: "/logout",
+            controller: "logoutCtrl"
         })
 
 

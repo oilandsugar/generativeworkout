@@ -1,14 +1,20 @@
 <div class="wrap">
-  <h4 class="underline">register</h4>
-  <div class="oauth">
-    <a class=""><h4>register with facebook</h4></a>
-  </div>
-  <form class="regular-form">
-    <label for="register-email">email</label>
-    <input name="register-email" type="email" required>
-    <label for="register-username">username</label>
-    <input name="register-username" type="text" required>
-    <label for="register-password">password</label>
-    <input name="register-password" type="password" required>
-  </form>
+    <h4 class="underline">register</h4>
+
+    <div class="oauth">
+        <a class=""><h4>register with facebook</h4></a>
+    </div>
+    <form class="regular-form">
+        <label for="register-email">email</label>
+        <input id="register-email" type="email" required ng-model="user.email">
+        <label for="register-username">username</label>
+        <input id="register-username" type="text" required ng-model="user.username">
+        <label for="register-password">password</label>
+        <input id="register-password" type="password" required ng-model="user.password">
+        <label for="register-weight">Weight</label>
+        <input id="register-weight" type="number" min="0" ng-model="user.weight">
+        <label for="register-height">Height (cm)</label>
+        <input id="register-height" type="number" min="0" ng-model="user.height">
+        <input type="submit" ng-click="reg.register(user)" value="Create my Account">
+    </form>
 </div>

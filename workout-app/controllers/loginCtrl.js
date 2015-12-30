@@ -27,7 +27,7 @@
 
             }, function errorCallback() {
                 // TODO Replace this ugly thing
-                alert('Wrong credential');
+                console.log('Wrong credential');
             });
 
         }
