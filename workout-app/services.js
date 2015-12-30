@@ -13,13 +13,13 @@ angular.module('workout-app')
         var vm = this;
         vm.address = 'http://104.233.111.82:8009/';
     })
-    .service('Activity', function (User, $http, $q) {
+    .service('Activity', function (User, $http, $q, Settings) {
 
         this.getActivities = function () {
             return $q(function (resolve, reject) {
                 $http({
                     method: 'GET',
-                    url: 'http://localhost:8009/activity'
+                    url: Settings.address+'/activity/'
                 }).then(function successCallback(response) {
                     resolve(response.data);
                 }, function errorCallback() {
