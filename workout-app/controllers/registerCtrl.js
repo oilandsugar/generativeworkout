@@ -3,22 +3,22 @@
 
     angular
         .module('workout-app')
-        .controller('registerCtrl', ['$http', '$stateParams', '$rootScope', '$state', 'User', '$cookies', Register]);
+        .controller('registerCtrl', ['$http', '$stateParams', '$rootScope', '$state', 'User', '$cookies', 'Settings', Register]);
 
-    function Register($http, $stateParams, $rootScope, $state, User, $cookies) {
+    function Register($http, $stateParams, $rootScope, $state, User, $cookies, Settings) {
         console.log('in controller login');
         var vm = this;
         vm.register = function (user) {
             console.log(user);
             $http({
                 method: 'POST',
-                url: 'http://localhost:8009/router/users/',
+                url: Settings.address + '/router/users/',
                 data: {
                     username: user.username,
                     email: user.email,
                     password: user.password,
                     weight: user.weight,
-                    height:user.height
+                    height: user.height
 
                 }
             }).then(function successCallback(response) {

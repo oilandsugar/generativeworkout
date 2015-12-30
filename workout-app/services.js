@@ -9,6 +9,10 @@ angular.module('workout-app')
             vm.user = user;
         };
     })
+    .service('Settings', function () {
+        var vm = this;
+        vm.address = 'http://104.233.111.82:8009/';
+    })
     .service('Activity', function (User, $http, $q) {
 
         this.getActivities = function () {

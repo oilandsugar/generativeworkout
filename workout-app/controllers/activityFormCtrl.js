@@ -6,9 +6,9 @@
 
     angular
         .module('workout-app')
-        .controller('activityFormCtrl', ['$http', '$stateParams', '$rootScope', '$state', 'User', ActivityForm]);
+        .controller('activityFormCtrl', ['$http', '$stateParams', '$rootScope', '$state', 'User','Settings', ActivityForm]);
 
-    function ActivityForm($http, $stateParams, $rootScope, $state, User) {
+    function ActivityForm($http, $stateParams, $rootScope, $state, User, Settings) {
         console.log('in controller login');
         var vm = this;
         $('#activity-date').datetimepicker();
@@ -32,7 +32,7 @@
             time += min + ":" + sec;
             $http({
                 method: 'POST',
-                url: 'http://localhost:8009/router/activity/',
+                url: Settings.address +'router/activity/',
                 data: {
                     date: date,
                     duration: time,

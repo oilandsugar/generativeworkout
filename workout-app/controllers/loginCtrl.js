@@ -3,15 +3,15 @@
 
     angular
         .module('workout-app')
-        .controller('loginCtrl', ['$http', '$stateParams', '$rootScope', '$state', 'User', '$cookies', Login]);
+        .controller('loginCtrl', ['$http', '$stateParams', '$rootScope', '$state', 'User', '$cookies', 'Settings', Login]);
 
-    function Login($http, $stateParams, $rootScope, $state, User, $cookies) {
+    function Login($http, $stateParams, $rootScope, $state, User, $cookies, Settings) {
         console.log('in controller login');
         var vm = this;
         vm.login = function (user) {
             $http({
                 method: 'POST',
-                url: 'http://localhost:8009/api/auth/',
+                url: Settings.address + 'api/auth/',
                 headers: {
                     'Authorization': "Basic " +
                     btoa(user.username + ':' + user.password)

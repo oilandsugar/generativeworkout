@@ -36,10 +36,10 @@
                             var text = '';
                             if (this.series.name == 'Running') {
                                 text = this.x +
-                                    '<br>You have run '+Highcharts.numberFormat(this.y, 2)+' km';
+                                    '<br>You have run ' + Highcharts.numberFormat(this.y, 2) + ' km';
                             } else {
                                 text = this.x +
-                                    '<br>Your pace is ' + Highcharts.numberFormat(this.y, 2)+ ' min/km';
+                                    '<br>Your pace is ' + Highcharts.numberFormat(this.y, 2) + ' min/km';
                             }
                             return text;
                         }
@@ -56,7 +56,7 @@
                 var series = [];
                 var running = {name: 'Running', data: []};
                 var pace = {name: 'Running Pace', data: []};
-                vm.total_time= moment.duration();
+                vm.total_time = moment.duration();
                 vm.activities.forEach(function (entry) {
                     if (entry.distance != null) {
                         var date = moment(entry.date).locale("en").format('ll');

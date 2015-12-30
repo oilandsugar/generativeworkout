@@ -1,5 +1,5 @@
 angular.module('workout-app')
-    .controller("MainController", function (User, $cookies, $http) {
+    .controller("MainController", function (User, $cookies, $http, Settings) {
         var vm = this;
         vm.user = User.getUser();
         var auth = $cookies.get('session');
@@ -7,7 +7,7 @@ angular.module('workout-app')
             $http.defaults.headers.common.Authorization = auth;
             $http({
                 method: 'POST',
-                url: 'http://localhost:8009/api/auth/'
+                url: Settings.address +'/api/auth/'
             }).then(function successCallback(response) {
                 vm.user = response.data;
                 User.setUser(vm.user);
