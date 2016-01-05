@@ -12,7 +12,7 @@
             console.log(user);
             $http({
                 method: 'POST',
-                url: Settings.address + '/router/users/',
+                url: Settings.address + 'router/users/',
                 data: {
                     username: user.username,
                     email: user.email,
