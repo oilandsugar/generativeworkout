@@ -8,8 +8,7 @@
     function ActivityList($http, $stateParams, $state, User, Activity) {
         console.log('in controller Activity');
         var vm = this;
-        vm.myVar = 'allo John';
-        var promise = Activity.getActivities();
+        var promise = Activity.getActivities($stateParams.date);
         promise.then(function (data) {
                 vm.data = data;
                 vm.total_distance = data.distance_total;

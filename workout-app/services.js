@@ -15,11 +15,14 @@ angular.module('workout-app')
     })
     .service('Activity', function (User, $http, $q, Settings) {
 
-        this.getActivities = function () {
+        this.getActivities = function (date) {
+            if(typeof date == 'undefined') {
+                date = '';
+            }
             return $q(function (resolve, reject) {
                 $http({
                     method: 'GET',
-                    url: Settings.address+'/activity/'
+                    url: Settings.address+'activity?date='+date
                 }).then(function successCallback(response) {
                     resolve(response.data);
                 }, function errorCallback() {
