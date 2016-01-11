@@ -11,8 +11,8 @@ angular.module('workout-app')
     })
     .service('Settings', function () {
         var vm = this;
-        //vm.address = 'http://104.233.111.82:8009/';
-        vm.address = 'http://localhost:8009/';
+        vm.address = 'http://104.233.111.82:8009/';
+        //vm.address = 'http://localhost:8009/';
     })
     .service('Activity', function (User, $http, $q, Settings) {
 

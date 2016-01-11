@@ -13,6 +13,7 @@ cd Docker
 docker-compose up
 ```
 ## TODO
+* Logout [route /logout but no interface button]
 * Change docker apache config to disable caching
 * Regex for date
 * Profile page (Read|Edit)
@@ -24,7 +25,6 @@ docker-compose up
 * Form validation and more options (miles / km)
 * Default value in activity form (exemple 0 second, datetime.now ...)
 ## Done
-* Logout [route /logout but no interface button]
 * Register [Done]
 * Add activity [done]
 * cookie session [Done]
