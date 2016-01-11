@@ -13,15 +13,19 @@ cd Docker
 docker-compose up
 ```
 ## TODO
-* Logout [route /logout but no interface button]
-* Register [Done]
+* Change docker apache config to disable caching
+* Regex for date
 * Profile page (Read|Edit)
 * See activity (month/week/custom view)
-    * Change current week
+    * Change current week [done]
     * Fix current week to include today and begin monday
 * Auto-generated workout
-* Add activity [done]
-* cookie session [Done]
 * cookie color scheme ?
 * Form validation and more options (miles / km)
 * Default value in activity form (exemple 0 second, datetime.now ...)
+## Done
+* Logout [route /logout but no interface button]
+* Register [Done]
+* Add activity [done]
+* cookie session [Done]
+

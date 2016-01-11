@@ -6,9 +6,17 @@
         .controller('activityListCtrl', ['$http', '$stateParams', '$state', 'User', 'Activity', ActivityList]);
 
     function ActivityList($http, $stateParams, $state, User, Activity) {
-        console.log('in controller Activity');
+        console.log('in controller Activity'+$stateParams.date);
         var vm = this;
-        var promise = Activity.getActivities($stateParams.date);
+        if(typeof $stateParams.date == 'undefined' || !moment($stateParams.date,'D-M-YYYY').isValid()) {
+            vm.date = moment().format('D-M-YYYY')   ;
+        } else {
+            vm.date = $stateParams.date;
+        }
+        console.log('la date est : '+ vm.date);
+        vm.previous_date = moment(vm.date, 'D-M-YYYY').subtract(7, 'days').format('D-M-YYYY');
+        vm.next_date = moment(vm.date, 'D-M-YYYY').add(7, 'days').format('D-M-YYYY');
+        var promise = Activity.getActivities(vm.date);
         promise.then(function (data) {
                 vm.data = data;
                 vm.total_distance = data.distance_total;
@@ -66,10 +74,12 @@
                         vm.total_time = moment.duration(vm.total_time) + moment.duration(entry.duration);
                     }
                 });
-                options.xAxis.categories = categories;
                 options.series.push(running);
                 options.series.push(pace);
                 vm.total_time = moment.duration(vm.total_time).asMinutes();
+                vm.average_pace_min = Math.floor(vm.total_time / vm.total_distance);
+                vm.average_pace_sec = Math.floor((vm.total_time / vm.total_distance %1) * 60);
+                options.xAxis.categories = categories;
                 $('#container').highcharts(options);
             },
             function (reason) {

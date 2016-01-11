@@ -1,7 +1,25 @@
-<p>Total distance: {{ctrlActivity.total_distance}} km</p>
-<p>Total time: {{ctrlActivity.total_time}} min</p>
+<ul class="flex-container-activity">
+    <li class="flex-item-activity">Total time: {{ctrlActivity.total_time| number:2}} min</li>
+    <li class="flex-item-activity">Total distances: {{ctrlActivity.total_distance| number:2}} km</li>
+    <li class="flex-item-activity">Average pace: {{ctrlActivity.average_pace_min}} min and {{ctrlActivity.average_pace_sec}} sec</li>
+</ul>
+<!--<ul class="flex-container-activity">-->
+    <!--<li class="flex-item-activity">Calorie: calorie</li>-->
+<!--</ul>-->
+<div class="week-control" style="float:right">
+
+    <a ui-sref="base.activity_list({ date:ctrlActivity.previous_date })">
+        Last week
+        <i class="fa fa-chevron-left"></i>
+    </a>
+    <a ui-sref="base.activity_list({ date:ctrlActivity.next_date })">
+        Next week
+        <i class="fa fa-chevron-right"></i>
+    </a>
+</div>
+
 <div id="container" style="width:100%; height:400px;"></div>
 <!--<div ng-repeat="activity in ctrlActivity.activities">-->
-    <!--{{activity.date}}-->
-    <!--{{activity.distance}}-->
+<!--{{activity.date}}-->
+<!--{{activity.distance}}-->
 <!--</div>-->

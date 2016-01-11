@@ -79,7 +79,7 @@ angular.module('workout-app').config(function ($stateProvider, $urlRouterProvide
             templateUrl: "workout-app/partials/activity_form.html",
             controller: "activityFormCtrl as activityForm"
         }).state('base.activity_list', {
-            url: "/activity",
+            url: "/activity/:date",
             templateUrl: "workout-app/partials/activity_list.html",
             controller: "activityListCtrl as ctrlActivity"
         }).state('logout', {

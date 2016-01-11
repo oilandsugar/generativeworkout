@@ -11,12 +11,14 @@ angular.module('workout-app')
     })
     .service('Settings', function () {
         var vm = this;
-        vm.address = 'http://104.233.111.82:8009/';
+        //vm.address = 'http://104.233.111.82:8009/';
+        vm.address = 'http://localhost:8009/';
     })
     .service('Activity', function (User, $http, $q, Settings) {
 
         this.getActivities = function (date) {
-            if(typeof date == 'undefined') {
+            if(typeof date == 'undefined' || !moment(date,'D-M-YYYY').isValid()) {
+                console.log('date pas valide');
                 date = '';
             }
             return $q(function (resolve, reject) {
