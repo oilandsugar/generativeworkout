@@ -14,7 +14,6 @@ docker-compose up
 ```
 ## TODO
 * Logout [route /logout but no interface button]
-* Change docker apache config to disable caching
 * Regex for date
 * Profile page (Read|Edit)
 * See activity (month/week/custom view)
